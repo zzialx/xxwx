@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TR_LoginOutCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KQW-pQ-MHN">
+                        <rect key="frame" x="15" y="0.0" width="345" height="54"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="退出登录" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ju-f2-2bW">
+                                <rect key="frame" x="15" y="0.0" width="330" height="54"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="0.26000000000000001" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right_jiantou" translatesAutoresizingMaskIntoConstraints="NO" id="bUF-kK-suT">
+                                <rect key="frame" x="320" y="22" width="10" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="4Ns-oE-RJ0"/>
+                                    <constraint firstAttribute="height" constant="10" id="9Ah-dY-Gbj"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bUF-kK-suT" firstAttribute="centerY" secondItem="0Ju-f2-2bW" secondAttribute="centerY" id="2f1-um-pwY"/>
+                            <constraint firstItem="0Ju-f2-2bW" firstAttribute="leading" secondItem="KQW-pQ-MHN" secondAttribute="leading" constant="15" id="cwI-9X-Zsq"/>
+                            <constraint firstAttribute="trailing" secondItem="bUF-kK-suT" secondAttribute="trailing" constant="15" id="fYT-zY-Y1i"/>
+                            <constraint firstAttribute="bottom" secondItem="0Ju-f2-2bW" secondAttribute="bottom" id="t82-OO-at2"/>
+                            <constraint firstItem="0Ju-f2-2bW" firstAttribute="top" secondItem="KQW-pQ-MHN" secondAttribute="top" id="vQ2-qg-p4n"/>
+                            <constraint firstAttribute="trailing" secondItem="0Ju-f2-2bW" secondAttribute="trailing" id="xLF-6a-fCk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="KQW-pQ-MHN" secondAttribute="bottom" id="1MC-5I-TUJ"/>
+                <constraint firstAttribute="trailing" secondItem="KQW-pQ-MHN" secondAttribute="trailing" constant="15" id="SXb-yU-okA"/>
+                <constraint firstItem="KQW-pQ-MHN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="tzZ-8L-xsn"/>
+                <constraint firstItem="KQW-pQ-MHN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="waP-ar-f1M"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="154.72263868065968"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="right_jiantou" width="20" height="20"/>
+    </resources>
+</document>

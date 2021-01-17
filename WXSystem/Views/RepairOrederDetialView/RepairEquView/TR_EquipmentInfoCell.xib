@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="103" id="KGk-i7-Jjw" customClass="TR_EquipmentInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="103"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="102.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="保修设备：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBg-8u-Bqz">
+                        <rect key="frame" x="16" y="12.5" width="77" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="77" id="48G-xg-hfu"/>
+                            <constraint firstAttribute="height" constant="18" id="eaB-ot-TpV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjx-Bd-VXN">
+                        <rect key="frame" x="195" y="7.5" width="109" height="28"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.98039215686274506" blue="1" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="LF9-Yy-mqn"/>
+                            <constraint firstAttribute="width" constant="109" id="s5X-7n-VYo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal">
+                            <color key="titleColor" red="0.094117647058823528" green="0.56470588235294117" blue="1" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="showEquipmentInfoAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="VD7-A1-Bwm"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O8E-tb-Xfu">
+                        <rect key="frame" x="16" y="40.5" width="288" height="58"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="58" id="1MU-pl-Mg0"/>
+                            <constraint firstAttribute="width" constant="288" id="3Ae-cN-x4O"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wBg-8u-Bqz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="9hO-bm-wkb"/>
+                    <constraint firstItem="kjx-Bd-VXN" firstAttribute="centerY" secondItem="wBg-8u-Bqz" secondAttribute="centerY" id="AbU-r5-RpU"/>
+                    <constraint firstAttribute="trailing" secondItem="O8E-tb-Xfu" secondAttribute="trailing" constant="16" id="GtU-I5-EuE"/>
+                    <constraint firstItem="O8E-tb-Xfu" firstAttribute="top" secondItem="kjx-Bd-VXN" secondAttribute="bottom" constant="5" id="Phx-76-003"/>
+                    <constraint firstAttribute="bottom" secondItem="O8E-tb-Xfu" secondAttribute="bottom" constant="5" id="VEh-F3-r6U"/>
+                    <constraint firstItem="O8E-tb-Xfu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Vgk-CI-XlJ"/>
+                    <constraint firstAttribute="trailing" secondItem="kjx-Bd-VXN" secondAttribute="trailing" constant="16" id="hD1-RL-tyy"/>
+                    <constraint firstItem="wBg-8u-Bqz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="rDX-gP-LbT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="firstEquInfoLab" destination="kjx-Bd-VXN" id="FKB-vP-RT8"/>
+                <outlet property="firstLabWidth" destination="s5X-7n-VYo" id="0zT-dP-iY6"/>
+                <outlet property="secondEquView" destination="O8E-tb-Xfu" id="fVv-Oh-LYn"/>
+                <outlet property="secondViewHeight" destination="1MU-pl-Mg0" id="dbd-KX-xhg"/>
+                <outlet property="secondViewWidth" destination="3Ae-cN-x4O" id="mrb-lp-t1g"/>
+            </connections>
+            <point key="canvasLocation" x="-2045" y="-86"/>
+        </tableViewCell>
+    </objects>
+</document>

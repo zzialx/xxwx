@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="TR_EquipmentFailureCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="故障说明：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jf9-7u-hjS">
+                        <rect key="frame" x="16" y="10" width="77" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="Teo-ix-fDV"/>
+                            <constraint firstAttribute="width" constant="77" id="yEH-Gk-coh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="机器老化机器老化机器老化机器老化机器老化机器老化机器老化机器老化机器老化机器老化机器老化63696" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTW-CS-Ybq">
+                        <rect key="frame" x="16" y="38" width="288" height="55"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="hTW-CS-Ybq" secondAttribute="trailing" constant="16" id="7ST-Ef-EVQ"/>
+                    <constraint firstAttribute="bottom" secondItem="hTW-CS-Ybq" secondAttribute="bottom" constant="6.5" id="Ha2-tG-cjS"/>
+                    <constraint firstItem="jf9-7u-hjS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="WZb-GE-hec"/>
+                    <constraint firstItem="hTW-CS-Ybq" firstAttribute="top" secondItem="jf9-7u-hjS" secondAttribute="bottom" constant="10" id="Ytz-3r-ftS"/>
+                    <constraint firstItem="hTW-CS-Ybq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="l0b-ZL-GhQ"/>
+                    <constraint firstItem="jf9-7u-hjS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="sPq-1y-eZ5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="failureLab" destination="hTW-CS-Ybq" id="vVe-4l-Dbb"/>
+            </connections>
+            <point key="canvasLocation" x="-452" y="65"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TR_RepairInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="工单编号：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUS-bC-c1y">
+                        <rect key="frame" x="15" y="12.5" width="77" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="77" id="aAW-fi-dfV"/>
+                            <constraint firstAttribute="height" constant="19" id="cPM-Ym-F2L"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="测试数据测试数据" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pW2-j2-FqN">
+                        <rect key="frame" x="92" y="13" width="180" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="9lr-6M-Ha1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DK0-bI-tX6">
+                        <rect key="frame" x="288" y="13" width="17" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="14n-dm-fh7"/>
+                            <constraint firstAttribute="width" constant="17" id="iRh-sc-BzL"/>
+                        </constraints>
+                        <inset key="titleEdgeInsets" minX="1" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" backgroundImage="address_logo"/>
+                        <connections>
+                            <action selector="infoBtnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xL9-KE-sb2"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pW2-j2-FqN" firstAttribute="leading" secondItem="BUS-bC-c1y" secondAttribute="trailing" id="Vcf-eW-Fix"/>
+                    <constraint firstItem="pW2-j2-FqN" firstAttribute="leading" secondItem="BUS-bC-c1y" secondAttribute="trailing" id="VhJ-VY-va7"/>
+                    <constraint firstItem="pW2-j2-FqN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="W8F-Qt-0iM"/>
+                    <constraint firstItem="DK0-bI-tX6" firstAttribute="leading" secondItem="pW2-j2-FqN" secondAttribute="trailing" constant="16" id="a0J-CD-ClF"/>
+                    <constraint firstItem="BUS-bC-c1y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="bDu-i1-wqu"/>
+                    <constraint firstItem="BUS-bC-c1y" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="pEh-LN-RyB"/>
+                    <constraint firstAttribute="trailing" secondItem="DK0-bI-tX6" secondAttribute="trailing" constant="15" id="rL1-G7-z8M"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="DK0-bI-tX6" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="YXW-CB-lVr"/>
+            </constraints>
+            <connections>
+                <outlet property="contentLab" destination="pW2-j2-FqN" id="EfM-9a-msM"/>
+                <outlet property="infoBtn" destination="DK0-bI-tX6" id="HMW-Fa-a6i"/>
+                <outlet property="titlelab" destination="BUS-bC-c1y" id="C9n-Qv-P3E"/>
+            </connections>
+            <point key="canvasLocation" x="-252.17391304347828" y="63.616071428571423"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="address_logo" width="16.5" height="18"/>
+    </resources>
+</document>

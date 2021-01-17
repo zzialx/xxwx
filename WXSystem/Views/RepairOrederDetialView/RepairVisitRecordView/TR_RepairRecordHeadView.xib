@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TR_RepairRecordHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="服务满意度：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYh-9W-Q1S">
+                    <rect key="frame" x="16" y="13" width="92" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="92" id="6wP-my-duP"/>
+                        <constraint firstAttribute="height" constant="18" id="cde-lj-EsP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="不满意" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XHe-Vh-Qf1">
+                    <rect key="frame" x="244" y="13" width="60" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="EGo-DZ-nvZ"/>
+                        <constraint firstAttribute="height" constant="18" id="wnD-tN-gog"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.98431372549019602" green="0.21176470588235294" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rYh-9W-Q1S" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Y8P-yU-vrr"/>
+                <constraint firstItem="rYh-9W-Q1S" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="bnC-XI-xz4"/>
+                <constraint firstItem="XHe-Vh-Qf1" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="gZO-1v-mcw"/>
+                <constraint firstAttribute="trailing" secondItem="XHe-Vh-Qf1" secondAttribute="trailing" constant="16" id="q6V-hx-gUa"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="degressLab" destination="XHe-Vh-Qf1" id="Ois-X0-873"/>
+            </connections>
+            <point key="canvasLocation" x="-229" y="16"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TR_HomeHeadLogoCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="211"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="210.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="head_logo" translatesAutoresizingMaskIntoConstraints="NO" id="dkx-BB-npE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="210.5"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gkk-gZ-Hbb">
+                        <rect key="frame" x="0.0" y="190.5" width="320" height="20"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="EbW-3b-YA3"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="dkx-BB-npE" secondAttribute="bottom" id="9k7-yN-LHG"/>
+                    <constraint firstItem="dkx-BB-npE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Gtx-Jr-VZb"/>
+                    <constraint firstAttribute="bottom" secondItem="gkk-gZ-Hbb" secondAttribute="bottom" id="aL8-3j-ogc"/>
+                    <constraint firstItem="dkx-BB-npE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="aWG-A7-ECZ"/>
+                    <constraint firstAttribute="trailing" secondItem="dkx-BB-npE" secondAttribute="trailing" id="oeq-sV-drW"/>
+                    <constraint firstItem="gkk-gZ-Hbb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="v4c-ic-A0r"/>
+                    <constraint firstAttribute="trailing" secondItem="gkk-gZ-Hbb" secondAttribute="trailing" id="zR6-Bt-XNo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="headLineView" destination="gkk-gZ-Hbb" id="3ii-sU-kXb"/>
+                <outlet property="headLogo" destination="dkx-BB-npE" id="zXS-bv-Qhi"/>
+            </connections>
+            <point key="canvasLocation" x="-320.28985507246381" y="-0.33482142857142855"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="head_logo" width="375" height="211"/>
+    </resources>
+</document>

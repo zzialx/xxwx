@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TR_RepairFootView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ThP-dd-RBv">
+                    <rect key="frame" x="16" y="8" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="Lyh-C5-IGu"/>
+                        <constraint firstAttribute="height" constant="44" id="n9S-55-1e3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="titleEdgeInsets" minX="-24" minY="24" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="8" minY="-14" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="留言" image="leavel_msg">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="leavelMsgAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="PfH-cb-hVh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3R2-r6-Rob">
+                    <rect key="frame" x="60" y="8" width="116.5" height="44"/>
+                    <color key="backgroundColor" red="0.094117647058823528" green="0.56470588235294117" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Flf-Dm-Jhs"/>
+                    </constraints>
+                    <state key="normal" title="接收工单">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="acceptRepairAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="6bP-jk-Wmy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJ4-ah-8QZ">
+                    <rect key="frame" x="187.5" y="8" width="116.5" height="44"/>
+                    <color key="backgroundColor" red="0.13333333333333333" green="0.77254901960784317" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="添加服务进度">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="addProgressAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="9zH-tM-8Xa"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3R2-r6-Rob" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="4Np-1O-QtB"/>
+                <constraint firstItem="vJ4-ah-8QZ" firstAttribute="width" secondItem="3R2-r6-Rob" secondAttribute="width" id="4yH-Do-Mzu"/>
+                <constraint firstItem="ThP-dd-RBv" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="7M0-e2-ZYR"/>
+                <constraint firstAttribute="trailing" secondItem="vJ4-ah-8QZ" secondAttribute="trailing" constant="16" id="9DK-9L-b6C"/>
+                <constraint firstItem="vJ4-ah-8QZ" firstAttribute="leading" secondItem="3R2-r6-Rob" secondAttribute="trailing" constant="11" id="U2c-rS-Doc"/>
+                <constraint firstItem="3R2-r6-Rob" firstAttribute="leading" secondItem="ThP-dd-RBv" secondAttribute="trailing" id="Wfk-fp-dnQ"/>
+                <constraint firstItem="ThP-dd-RBv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="ZZj-Vg-Pku"/>
+                <constraint firstItem="vJ4-ah-8QZ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="cg2-WW-iTt"/>
+                <constraint firstItem="vJ4-ah-8QZ" firstAttribute="height" secondItem="3R2-r6-Rob" secondAttribute="height" id="vY1-NE-VoT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addEquBtnAndAddProBtnMuti" destination="4yH-Do-Mzu" id="sNq-0r-lJL"/>
+                <outlet property="addServiceProBtn" destination="vJ4-ah-8QZ" id="iHr-BK-msn"/>
+                <outlet property="footBtn" destination="3R2-r6-Rob" id="1pS-Qr-V4z"/>
+                <outlet property="leavelBtn" destination="ThP-dd-RBv" id="PSD-Ku-e2A"/>
+                <outlet property="leavelBtnWidth" destination="Lyh-C5-IGu" id="Vof-eR-DSt"/>
+                <outlet property="receiveBtnAndAddProBtnDis" destination="U2c-rS-Doc" id="t9V-Pd-Pzt"/>
+            </connections>
+            <point key="canvasLocation" x="-2299" y="19"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="leavel_msg" width="19.5" height="18"/>
+    </resources>
+</document>
